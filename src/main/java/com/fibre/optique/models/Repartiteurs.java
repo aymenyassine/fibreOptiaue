@@ -17,6 +17,8 @@ public class Repartiteurs {
 
     private String nom;
     private int nbPorts;
+    private Double longitude;
+    private Double latitude;
 
     @ManyToOne
     private Datacenters datacenter;

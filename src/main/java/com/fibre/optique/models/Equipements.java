@@ -16,6 +16,9 @@ public class Equipements {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private String nom;
+    private String modele;
+    private String numSerie;
     private String ip;
 
     @Enumerated(EnumType.STRING)

@@ -10,6 +10,9 @@ import org.springframework.stereotype.Component;
 public class EquipementMapper {
     public Equipements toEntity(EquipementRequestDTO dto) {
         Equipements entity = new Equipements();
+        entity.setNom(dto.getNom());
+        entity.setModele(dto.getModele());
+        entity.setNumSerie(dto.getNumSerie());
         entity.setIp(dto.getIp());
         entity.setStatus(dto.getStatus());
         entity.setType(dto.getType());
@@ -23,6 +26,9 @@ public class EquipementMapper {
     public EquipementResponseDTO toResponseDTO(Equipements entity) {
         EquipementResponseDTO dto = new EquipementResponseDTO();
         dto.setId(entity.getId());
+        dto.setNom(entity.getNom());
+        dto.setModele(entity.getModele());
+        dto.setNumSerie(entity.getNumSerie());
         dto.setIp(entity.getIp());
         dto.setStatus(entity.getStatus());
         dto.setType(entity.getType());

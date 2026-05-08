@@ -12,6 +12,8 @@ public class RepartiteurMapper {
         Repartiteurs entity = new Repartiteurs();
         entity.setNom(dto.getNom());
         entity.setNbPorts(dto.getNbPorts());
+        entity.setLongitude(dto.getLongitude());
+        entity.setLatitude(dto.getLatitude());
         if(dto.getDatacenterId() != null){
             Datacenters d = new Datacenters();
             d.setId(dto.getDatacenterId());
@@ -24,6 +26,8 @@ public class RepartiteurMapper {
         dto.setId(entity.getId());
         dto.setNom(entity.getNom());
         dto.setNbPorts(entity.getNbPorts());
+        dto.setLongitude(entity.getLongitude());
+        dto.setLatitude(entity.getLatitude());
         if(entity.getDatacenter() != null){
             dto.setDatacenterId(entity.getDatacenter().getId());
         }

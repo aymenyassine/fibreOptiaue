@@ -7,5 +7,7 @@ public class RepartiteurResponseDTO {
     private Long id;
     private String nom;
     private int nbPorts;
+    private Double longitude;
+    private Double latitude;
     private Long datacenterId;
 }
